@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.4
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcrylicWPF", "AcrylicWPF.csproj", "{7BE358D0-F7F8-4404-B378-9A90A0AF85EE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcrylicWPF", "AcrylicWPF\AcrylicWPF.csproj", "{7BE358D0-F7F8-4404-B378-9A90A0AF85EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

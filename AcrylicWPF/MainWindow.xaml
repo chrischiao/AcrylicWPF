@@ -1,0 +1,103 @@
+﻿<mah:MetroWindow
+    x:Class="AcrylicWPF.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:behaviours="http://metro.mahapps.com/winfx/xaml/shared"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+    xmlns:local="clr-namespace:AcrylicWPF"
+    xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    local:EnableDragHelper.EnableDrag="True"
+    Background="Transparent"
+    ShowTitleBar="False"
+    WindowStartupLocation="CenterScreen"
+    mc:Ignorable="d">
+    <mah:MetroWindow.WindowButtonCommands>
+        <mah:WindowButtonCommands Style="{DynamicResource CustomWindowButtonCommandsStyleLocatedtInAppXaml}" Template="{DynamicResource MahApps.Metro.Templates.WindowButtonCommands.Win10}" />
+    </mah:MetroWindow.WindowButtonCommands>
+    <i:Interaction.Behaviors>
+        <behaviours:BorderlessWindowBehavior />
+    </i:Interaction.Behaviors>
+    <Grid Background="Transparent">
+        <Rectangle
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            Fill="Black"
+            Opacity="0.6">
+            <Rectangle.Effect>
+                <local:NoiseEffect Ratio="0.25" />
+            </Rectangle.Effect>
+        </Rectangle>
+        <Grid Margin="50,40">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Margin="0,10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="10" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Image
+                    Grid.Row="0"
+                    Grid.RowSpan="3"
+                    Grid.Column="0"
+                    Width="510"
+                    Height="510"
+                    RenderOptions.BitmapScalingMode="Fant"
+                    Source="Images/surf.jpg"
+                    Stretch="UniformToFill" />
+                <Image
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    Width="250"
+                    Height="250"
+                    RenderOptions.BitmapScalingMode="Fant"
+                    Source="Images/surf2.jpg"
+                    Stretch="UniformToFill" />
+                <Image
+                    Grid.Row="0"
+                    Grid.Column="4"
+                    Width="250"
+                    Height="250"
+                    RenderOptions.BitmapScalingMode="Fant"
+                    Source="Images/surf3.jpg"
+                    Stretch="UniformToFill" />
+                <Image
+                    Grid.Row="2"
+                    Grid.Column="2"
+                    Width="250"
+                    Height="250"
+                    RenderOptions.BitmapScalingMode="Fant"
+                    Source="Images/surf4.jpg"
+                    Stretch="UniformToFill" />
+                <Image
+                    Grid.Row="2"
+                    Grid.Column="4"
+                    Width="250"
+                    Height="250"
+                    RenderOptions.BitmapScalingMode="Fant"
+                    Source="Images/surf5.jpg"
+                    Stretch="UniformToFill" />
+            </Grid>
+            <TextBlock
+                Grid.Row="1"
+                Margin="0,10"
+                VerticalAlignment="Bottom"
+                FontSize="22"
+                FontWeight="Light"
+                Foreground="White"
+                Text="Background Acrylic" />
+        </Grid>
+    </Grid>
+</mah:MetroWindow>
